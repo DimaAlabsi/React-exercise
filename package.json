@@ -1,0 +1,26 @@
+{
+  "name": "react-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaAlabsi/React-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaAlabsi/React-exercise/issues"
+  },
+  "homepage": "https://github.com/DimaAlabsi/React-exercise#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.9.0"
+  }
+}

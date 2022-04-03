@@ -6,8 +6,8 @@
   "scripts": {
     "init": "sequelize db:create",
     "start": "NODE_ENV=production node index.js",
-    "test" : "NODE_ENV=test jest",
-    "dev" : "NODE_ENV=development nodemon index.js"
+    "test": "NODE_ENV=test jest",
+    "dev": "NODE_ENV=development nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/DimaAlabsi/React-exercise#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "pg": "^8.7.3",

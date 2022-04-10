@@ -3,12 +3,18 @@
 const express = require("express");
 const router = express.Router();
 const { itemCollection } = require("../models/index");
+router.get("/items/:id", getOneItem);
 
 router.get("/items", getItem);
 router.post("/items", createItem);
 router.put("/items/:id", updateItem);
 router.delete("/items/:id", deleteItem);
 
+async function getOneItem(req, res) {
+  let id = parseInt(req.params.id);
+  let item1 = await itemCollection.read(id);
+  res.status(200).json(item1);
+}
 async function getItem(req, res) {
   let item = await itemCollection.read();
   res.status(200).json(item);
